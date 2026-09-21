@@ -90,4 +90,3 @@ checksum = generate_checksum(encrypted_path)
 backup_to_s3(encrypted_path, 'cloud-plus-blake-lab')
 downloaded_checksum = restore_from_s3('cloud-plus-blake-lab', 'test.txt.enc')
 verify_integrity(checksum, downloaded_checksum)
-
